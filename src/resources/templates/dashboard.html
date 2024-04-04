@@ -1,0 +1,32 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Name</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data will be populated dynamically -->
+        </tbody>
+    </table>
+    <form id="addForm">
+        <input type="text" id="nameInput" placeholder="Name" required><br>
+        <input type="text" id="linkInput" placeholder="Website Link" required><br>
+        <button type="button" onclick="addData()">Add Data</button>
+    </form>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
